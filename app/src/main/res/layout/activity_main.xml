@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dawnfm"
+    tools:context=".MainActivity"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etEnterDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter Your DOB"
+            android:textColor="#e4d507"
+            app:layout_constraintBottom_toTopOf="@id/tvShowsAgetxt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvShowsAgetxt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/tvShowsAgetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="193dp"
+            android:layout_marginBottom="455dp"
+            android:textColor="#e4d507"
+            android:text="Your Age Shows Here"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@id/etEnterDOB"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/button" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="347dp"
+            android:layout_marginEnd="161dp"
+            android:onClick="BTNClickevent"
+            android:text="GET MY AGE"
+            android:textColor="#e4d507"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvShowsAgetxt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
